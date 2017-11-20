@@ -60,18 +60,6 @@ int main(const int argc, char * const * argv) {
 		cout << "targetinput = cin" << ", ";
 		targetinput = &cin;
 	}
-	else {
-		target = optargs.arg(0);
-		cout << "targetinput (file name) = " << target;
-		targetfile.open(target);
-		if (!targetfile) {
-			cerr << "open file " << target << " failed!" << endl;
-			if (ifs) ifs.close();
-			return EXIT_FAILURE;
-		}
-		cout << ", ";
-		targetinput = &targetfile;
-	}
 	cout << endl;
 
 	ahdawg ad;
