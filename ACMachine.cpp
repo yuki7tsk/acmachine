@@ -9,6 +9,7 @@
 #include <cctype>
 
 
+
 ACMachine::ACMachine(void) {
 	setupInitialState();
 	resetState();
