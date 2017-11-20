@@ -16,7 +16,6 @@ ACMachine::ACMachine(void) {
 
 void ACMachine::setupInitialState(void) {
 	transitions.clear();
-	/////////////////////
 	transitions.push_back(std::map<alphabet, state>());
 	failure.clear();
 	failure.push_back(initialState());
